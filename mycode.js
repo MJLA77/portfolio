@@ -1,18 +1,27 @@
 
 
+// 1. GET HTML ELEMENTS //
 
 
+var button = document.querySelector('#ham-button')
+var menu = document.querySelector('#menu')
+var closeButton = document.querySelector('#close-button')
 
-var mywork = document.getElementById("mywork");
-var aboutme = document.getElementById("aboutme");
 
+//2. DEFINE ACTIONS //
 
-mywork.addEventListener('click',scroll);
-
-function scroll() {
-    event.preventDefault();
-    call = setInterval(scroll,10);
-    target = event.srcElement.dataset.scroll;
-    offset = document.getElementById(mywork).offsetTop
+function openMenu() {
+    menu.className = 'menu'
 
 }
+
+function closeMenu() {
+    menu.className = 'menu closed'
+
+}
+
+
+//3.WIRE IT UP//
+
+button.addEventListener('click', openMenu)
+closeButton.addEventListener('click',closeMenu)

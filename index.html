@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="./styles.css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Cinzel:400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <title>Maria Lopez - Web Developer</title>
+    <title> Maria Lopez - Web Developer </title>
+    <link rel="icon" href="./pictures/Mountains.jpg">
 </head>
 <body>
     <header class="header"> 
@@ -22,17 +23,45 @@
 
         <div class="nav-titles">
 
-            <div id="mywork"> 
+            <div> 
 
-                <a href="">My Work</a> 
+                <a href="#mywork">My Work</a> 
+
+            </div>    
+
+            <div >
+
+                <a href="#aboutme">About Me</a> 
 
             </div>    
 
-            <div id="aboutme">
+            
+            <div >
 
-                <a href="">About Me</a> 
+                <a href="#contactme">Contact Me</a> 
+    
+            </div>   
 
-            </div>    
+        </div>
+
+
+        <div id="ham-button" class="ham-button">
+
+            <button id="ham-button" class="hamburger-icon">
+
+            <i class="fas fa-bars"></i>
+
+        </div>
+
+
+        <div class="menu closed" id="menu">
+
+            <li><a href="#mywork">My Work</a></li>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#contactme">Contact Me</a></li>
+
+
+            <button id="close-button" class="close-button">close</button>
 
         </div>
 
@@ -40,36 +69,35 @@
 
     <main>
 
-        <div class="main-title">
+        <div class="headliner">
+
+            <div class="main-title">
                 
-            <h1>Web Developer</h1>
+                <h1>Web Developer</h1>
 
         
-        </div>
+            </div>
 
-        <div class="experience">
+            <div class="experience">
 
-            <h3>Designing and Creating Responsive Web Designs</h3>
-            <h4>Experience With HTML, CSS, JAVASCRIPT AND PHP</h4>
+                <h3>Designing and Creating Responsive Web Designs</h3>
+           
         
+            </div>
+
         </div>
 
         <div class="work-images">
 
 
-
-            <div>
-
-            </div>
-            
-        
+                 
 
         </div>
 
 
     </main>
 
-    <div class="mywork">
+    <div class="mywork" id="mywork">
 
         
         <h3>My Work</h3>
@@ -83,6 +111,7 @@
             <p>Work with Laravel</p>
 
             <a href="http://35.183.118.144/"><img src="./pictures/Fake-tumblr_Project.PNG" alt="tumblr project"></a>
+            <p>Recreating Tumblr with database</p>
 
 
         </div>
@@ -92,22 +121,26 @@
                 <p>Responsive Design</p>
     
                 <a href="https://assign3-jkveivdjpq.now.sh/"><img src="./pictures/kinetic-energy.PNG" alt="Kinetic Energy"></a>
+                <p>Making a simple responsive design</p>
     
         </div>
 
-        
-    
-    
+        <div class="work-desc work-images">
+
+            <p>WordPress</p>
+
+            <a href="http://35.202.66.211/wordpress1/"><img src="./pictures/wordPress.PNG" alt="WordPress"></a>
+            <p>Customizing Naked Theme in WordPress</p>
+
+        </div>
+
     
     </div>
 
 
-
-
-
     <div class="bio">
 
-        <div class="about-me">
+        <div class="about-me" id="aboutme">
 
             <h2>About Me</h2>
                 
@@ -115,6 +148,9 @@
                 In my spare time I  enjoy coding, yoga and the outdoors!</p>
 
             
+            <img   src="./pictures/paddleboarding.jpg" alt="paddleboarding">
+
+
             <strong><p>Contact me to find out more!</p></strong>
                 
         </div>
@@ -123,11 +159,11 @@
 
     <footer>
 
-        <div class="contactlinks"><i class="fas fa-share-alt"></i>
+        <div id="contactme" class="contactlinks"><i class="fas fa-share-alt"></i>
             
-                <a href="mailto:mjlwebdevelopment@gmail.com"><i class="far fa-envelope"></i></a>
+                <a href="mailto:maria.lopez@mjlopez.ca"><i class="far fa-envelope"></i></a>
                 <a href="https://github.com/MJLA77?tab=repositories"><i class="fab fa-github"></i></a>
-                <a href="https://github.com/MJLA77?tab=repositories"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/maria-lopez-64012540/"><i class="fab fa-linkedin"></i></a>
                 
         </div>
 
@@ -135,6 +171,6 @@
 
 
 
-    <script src="./mycode.js"></script>
+    <script src="mycode.js"></script>
 </body>
 </html>
