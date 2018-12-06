@@ -5,23 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Cinzel:400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <title> Maria Lopez - Web Developer </title>
     <link rel="icon" href="./pictures/Mountains.jpg">
 </head>
 <body>
-    <header class="header"> 
+    <header class="header" > 
 
-        <div class="logo">
+        <div class="logo" >
 
-            <img src="./pictures/LOGO.gif" alt="logo">
+            <!-- <img src="./pictures/LOGO.gif" alt="logo"> -->
             <h3>Maria Lopez</h3>   
             
         </div>
 
 
         <div class="nav-titles">
+
+
+            <div >
+
+                <a href="#home">Home</a> 
+            
+            </div>  
 
             <div> 
 
@@ -41,6 +49,8 @@
                 <a href="#contactme">Contact Me</a> 
     
             </div>   
+
+
 
         </div>
 
@@ -67,11 +77,11 @@
 
     </header>
 
-    <main>
+    <main id="home"> 
 
         <div class="headliner">
 
-            <div class="main-title">
+            <div class="main-title" >
                 
                 <h1>Web Developer</h1>
 
@@ -108,31 +118,36 @@
 
         <div class="work-desc work-images">
 
-            <p>Work with Laravel</p>
 
-            <a href="http://35.183.118.144/"><img src="./pictures/Fake-tumblr_Project.PNG" alt="tumblr project"></a>
+            <a href="http://35.183.118.144/"target="_blank">Laravel</a><img src="./pictures/Fake-tumblr_Project.PNG" alt="tumblr project"></a>
             <p>Recreating Tumblr with database</p>
 
 
         </div>
 
         <div class="work-desc work-images">
-
-                <p>Responsive Design</p>
     
-                <a href="https://assign3-jkveivdjpq.now.sh/"><img src="./pictures/kinetic-energy.PNG" alt="Kinetic Energy"></a>
-                <p>Making a simple responsive design</p>
+            <a href="https://assign3-jkveivdjpq.now.sh/" target="_blank">Responsive</a><img src="./pictures/kinetic-energy.PNG" alt="Kinetic Energy"></a>
+            <p>Making a simple responsive design</p>
     
         </div>
 
         <div class="work-desc work-images">
 
-            <p>WordPress</p>
 
-            <a href="http://35.202.66.211/wordpress1/"><img src="./pictures/wordPress.PNG" alt="WordPress"></a>
+            <a href="http://35.202.66.211/wordpress1/" target="_blank">WordPress</a><img src="./pictures/wordPress.PNG" alt="WordPress"></a>
             <p>Customizing Naked Theme in WordPress</p>
 
         </div>
+
+        <div class="work-desc work-images">
+
+            <a href="https://websitejavascriptfinalproject-jdbfeuewmo.now.sh/" target="_blank">JavaScript</a><img src="./pictures/JavaScript.PNG" alt="JavaScript"></a>
+            <p>Using JavaScript functions to animate and populate</p>
+
+        </div>
+
+
 
     
     </div>
@@ -144,7 +159,7 @@
 
             <h2>About Me</h2>
                 
-            <p>I'm a Web Developer based in Calgary, Alberta. My background is in Business and I enjoy developing websites and always keeping up to date with the latest technology.
+            <p class="about">I'm a Web Developer based in Calgary, Alberta. My background is in Business and I enjoy developing websites and always keeping up to date with the latest technology.
                 In my spare time I  enjoy coding, yoga and the outdoors!</p>
 
             
@@ -152,12 +167,15 @@
 
 
             <strong><p>Contact me to find out more!</p></strong>
+            <p>PH:403-923-4294</p>
+            <p>EMAIL:maria.lopez@mjlopez.ca</p>
                 
         </div>
 
     </div>    
 
-    <footer>
+    
+    <div class="contact-info">
 
         <div id="contactme" class="contactlinks"><i class="fas fa-share-alt"></i>
             
@@ -167,6 +185,11 @@
                 
         </div>
 
+    </div>
+    
+    <footer>
+
+        &copy; Copyright 2018 Maria Lopez. https://mjlopez.ca. All Rights Reseved. Privacy Policy.
     </footer>
 
 

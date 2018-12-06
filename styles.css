@@ -1,10 +1,15 @@
 /* GENERAL  */
+
+* {
+    box-sizing: border-box;
+}
 html {
 
     scroll-behavior: smooth;
 
 }
 body {
+
 
     margin: 0;
 }
@@ -20,7 +25,13 @@ body {
     align-items: center;
     justify-content: space-evenly;
     font-family: 'Cinzel', serif;
-    border-bottom: 5px solid black;
+    /* border-bottom: 5px solid black; */
+    width: 100%;
+    position: fixed;
+    color: black;
+    /* margin-top:20px; */
+    border-radius: 50px;
+    
 }
 
 .logo {
@@ -30,16 +41,23 @@ body {
     flex-direction: row;
     align-items: center;
     margin-left: 200px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    margin-top:0;
     
 }
+
+
 .nav-titles {
 
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    margin-right: 200px;
+    font-family: 'Dancing Script', cursive;
+    margin-right: 100px;
+    font-size: 1.5em;
 }
 
 .nav-titles a {
@@ -47,7 +65,9 @@ body {
     padding: 20px;
     text-decoration: none;
     font-size: 1.2em;
-
+    color: white;
+    background-color:rgba(0, 0, 0, .5);
+    
 }
 
 .nav-titles a:hover {
@@ -80,11 +100,11 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background:url(./pictures/Mountains.jpg);
+    background:url(./pictures/Mountains.jpg) no-repeat;
     background-size: 100%;
     display: none;
     padding: 10px;
-    height: 100vh;
+    height: 700px;
     width: 100%;
     font-size:.8em;
     list-style: none;
@@ -112,8 +132,15 @@ body {
     border: none;
     text-transform: uppercase;
     font-size: 1em;
+    cursor: pointer;
    
    }
+
+#close-button:hover {
+
+    transform:scale(1.1);
+}
+
 
 
 /* MAIN */
@@ -128,7 +155,7 @@ main {
     background-image: url(./pictures/hero.jpg);
     background-position: center;
     background-size: cover;
-    height: 600px;
+    height: 100vh;
     width: 100%;
 
 
@@ -176,6 +203,11 @@ main {
     justify-content: center;
 }
 
+.about {
+    width: 475px;
+    text-align: justify;
+}
+
 .about-me {
 
     display: flex;
@@ -184,8 +216,12 @@ main {
     text-align: center;
     font-family: 'Cinzel', serif;
     font-size: 1em;
-    width: 600px;
-    padding: 20px;
+    width: 100%;
+    /* padding: 20px; */
+}
+
+.about-me img {
+    box-shadow: 9px 6px 32px 4px rgba(0,0,0,0.75);
 }
 
 
@@ -205,6 +241,8 @@ main {
 .work {
 
    display: flex;
+   flex-wrap: wrap;
+   width:100%;
    flex-direction: row;
    align-items: center;
    justify-content: center;
@@ -212,10 +250,12 @@ main {
 
 }
 
+
 .work-images img {
 
     height:200px;
     width: 400px; 
+    box-shadow: 9px 6px 32px 4px rgba(0,0,0,0.75);
 
 }
 
@@ -227,21 +267,21 @@ main {
     align-items: center;
     justify-content: center;
     height: 400px;
-    width: 400px;
-    padding: 20px;
+    width: 500px;
+    /* padding: 20px; */
 
 }
 
 /* FOOTER */
 
 
-footer {
+.contact-info {
 
    display: flex;
    flex-direction: row;
    justify-content: center;
    width: 100%;
-   height: 150px;
+   height: 250px;
 
 }
 
@@ -357,8 +397,11 @@ footer {
 
 /* MEDIA */
 
-@media (max-width:1267px) {
+@media (max-width:1110px) {
 
+    .nav-titles {
+        display: none;
+    }
 
 
     header img {
@@ -367,7 +410,9 @@ footer {
 
     .logo {
 
-        margin-left: 0;
+        margin-left: 20px;
+        font-size: 2em;
+
     }
 
     .headliner h1 {
@@ -383,16 +428,19 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 100%;
-     
+        height: 100%;  
      }
 
     
-
-
 }
 
 @media (max-width:1070px) { 
+
+    .logo {
+
+        font-size: 1.5em;
+        margin-left: 20px;
+    }
 
     .nav-titles {
         display: none;
@@ -419,7 +467,7 @@ footer {
         display: flex;
         justify-content: flex-end;
         align-items: center; 
-        width: 600px; 
+        width: 100%;
    
 }
 
@@ -428,7 +476,7 @@ footer {
         display: flex;
         margin: 0;
         border: none;
-        background: white;
+        background: transparent;
     
         
 }
@@ -497,4 +545,27 @@ footer {
 
 
 }
+
+.main-title{
+
+    margin-left: 10px;
+   
+}
+
+.about-me p {
+
+    font-size: .8em;
+    width: 400px;
+}
+
+
+}
+
+@media (max-width:556px) {
+
+    .about-me img {
+        width: 400px;
+        height: 500px;
+    }
+
 }
