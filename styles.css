@@ -14,6 +14,21 @@ body {
     margin: 0;
 }
 
+.wrapper {
+
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+input, textarea, select, button {
+    width : 150px;
+    margin: 0;
+    -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+    -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+    box-sizing: border-box;
+  }
+
 
 
 /* HEADER */
@@ -146,7 +161,7 @@ body {
 /* MAIN */
 
 
-main {
+.home {
 
     display: flex;
     flex-direction: column;
@@ -285,6 +300,7 @@ main {
 
 }
 
+
 .contactlinks {
 
     -webkit-transition: 0.4s;
@@ -393,6 +409,15 @@ main {
     padding:20px;
     color: black;
     
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: grey;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 5px;
 }
 
 /* MEDIA */
