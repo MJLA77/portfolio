@@ -160,6 +160,18 @@ input, textarea, select, button {
 
 /* MAIN */
 
+main {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.skills {
+
+    width: 25%;
+    background-color: red;
+}
 
 .home {
 
@@ -171,7 +183,7 @@ input, textarea, select, button {
     background-position: center;
     background-size: cover;
     height: 100vh;
-    width: 100%;
+    width: 75%;
 
 
 }
@@ -197,6 +209,7 @@ input, textarea, select, button {
 .main-title h1{
 
     margin: 10px;
+    font-size: 1.5em;
 
 }
 

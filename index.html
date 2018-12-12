@@ -81,32 +81,45 @@
 
     </header>
 
-    <main class="home" id="home"> 
+    <main> 
 
-        <div class="headliner">
 
-            <div class="main-title" >
+        <div class="home" id="home">
+
+            <div class="headliner">
+
+                <div class="main-title" >
                 
-                <h1>Web Developer</h1>
+                    <h1>Web Developer</h1>
 
         
-            </div>
+                </div>
 
-            <div class="experience">
+                <div class="experience">
 
-                <h3>Designing and Creating Responsive Web Designs</h3>
+                    <h3>Designing and Creating Responsive Web Designs</h3>
            
         
+                </div>
+
+            
+
             </div>
+
 
         </div>
 
-        <div class="work-images">
 
+        
+        <div class="skills">
 
+                <p>test</p>
                  
 
         </div>
+
+        
+    
 
 
     </main>
@@ -188,7 +201,7 @@
     <div  class="form_container">
         <div class="info-form">
 
-            <form action="submit_form.php">
+            <form method="post" action="send_mail.php">
     
                 <label for="fname">First Name</label>
                 <input type="text" id="fname" name="firstname" placeholder="First Name">
@@ -197,13 +210,13 @@
                 <input type="text" id="lname" name="lastname" placeholder="Last Name">
 
                 <label for="email">eMail</label>
-                <input type="text" id="email" name="email" placeholder="email">
+                <input type="email" id="email" name="email" placeholder="email">
     
                 <label for="country">Country</label>
                 <input type="text" id="country" name="country" placeholder="Country">
     
                 <label for="subject">Subject</label>
-                <textarea name="subject" id="subject" placeholder="Comments" cols="30" rows="10"></textarea>
+                <textarea name="subject" id="subject" placeholder="Comments" maxlength="500" cols="30" rows="10"></textarea>
     
     
                 <input type="submit" value="submit">
