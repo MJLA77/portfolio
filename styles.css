@@ -41,7 +41,7 @@ input, textarea, select, button {
     justify-content: space-evenly;
     font-family: 'Cinzel', serif;
     /* border-bottom: 5px solid black; */
-    width: 100%;
+    width: 81%;
     position: fixed;
     color: black;
     /* margin-top:20px; */
@@ -168,9 +168,25 @@ main {
 }
 
 .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Cinzel', serif;
 
     width: 25%;
-    background-color: red;
+
+}
+
+.skills h3 {
+
+    /* padding-bottom: 20px; */
+    width: 200px;
+    height: 40px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: center;
 }
 
 .home {
