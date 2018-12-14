@@ -7,6 +7,8 @@
     <meta name="description" content="Web Development">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./form.css">
+    <link rel="stylesheet" href="./mywork.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kristi" rel="stylesheet">
@@ -15,18 +17,22 @@
     <title> Maria J Lopez - Web Developer </title>
     <link rel="icon" href="./pictures/1x/mjlogo.png">
 </head>
+
+<div class="anchor"></div>
 <body id="home">
+
+    
     <header class="header" > 
 
         <div class="logo" >
 
-            <img src="./pictures/1x/mjlogo.png" alt="logo">
+            <a href="#home"> <img src="./pictures/1x/mjlogo.png" alt="logo"></a>
          
             
         </div>
 
 
-        <div class="nav-titles">
+        <div class="nav-titles nav-titles_black">
 
 
             <div >
@@ -128,40 +134,40 @@
     <div class="mywork" id="mywork">
 
         
-        <h3>My Work</h3>
+        <h3>Projects</h3>
 
     </div>  
     
     <div class="work">
 
-        <div class="work-desc work-images">
+        <div id="php" class="work-desc work-images">
 
 
-            <a href="http://35.183.118.144/"target="_blank">Laravel</a><img src="./pictures/Fake-tumblr_Project.PNG" alt="tumblr project"></a>
-            <p>Recreating Tumblr with database</p>
-
-
-        </div>
-
-        <div class="work-desc work-images">
+            <a href="http://35.183.118.144/"target="_blank">PHP</a><img class="phpimg" src="./pictures/Fake-tumblr_Project.PNG" alt="tumblr project"></a>
+            <p class="phptext">Problem: To recreate Tumblr, allowing users to log in, create an account and be able to post. Solution: Used HTML, CSS to recreate Tumblr appearance. Used PHP and SQL Database to be able to have users create an account, log in and create a post.</p>
     
-            <a href="https://assign3-jkveivdjpq.now.sh/" target="_blank">Responsive</a><img src="./pictures/kinetic-energy.PNG" alt="Kinetic Energy"></a>
-            <p>Making a simple responsive design</p>
+
+        </div>
+
+        <div id="csshtml" class="work-desc work-images">
+    
+            <a href="https://assign3-jkveivdjpq.now.sh/" target="_blank">CSS & HTML</a><img class="csshtmlimg"  src="./pictures/kinetic-energy.PNG" alt="Kinetic Energy"></a>
+            <p class="csshtmltext">Problem: To create a simple responsive design. Solution: Created responsive design with CSS attributes.</p>
     
         </div>
 
-        <div class="work-desc work-images">
+        <div id="csshtml" class="work-desc work-images">
 
 
-            <a href="http://35.202.66.211/wordpress1/" target="_blank">WordPress</a><img src="./pictures/wordPress.PNG" alt="WordPress"></a>
-            <p>Customizing Naked Theme in WordPress</p>
+            <a href="http://35.202.66.211/wordpress1/" target="_blank">WordPress</a><img class="csshtmlimg" src="./pictures/wordPress.PNG" alt="WordPress"></a>
+            <p class="csshtmltext">Problem: To create a visitor center site for the city of Sechelt,BC by using WordPress and the Naked theme template. Design requirements required for the template to be modified. Solution: Created the site with WordPress, modified the layout by adjusting PHP and CSS code.</p>
 
         </div>
 
-        <div class="work-desc work-images">
+        <div id="csshtml" class="work-desc work-images">
 
-            <a href="https://websitejavascriptfinalproject-jdbfeuewmo.now.sh/" target="_blank">JavaScript</a><img src="./pictures/JavaScript.PNG" alt="JavaScript"></a>
-            <p>Using JavaScript functions to animate and populate</p>
+            <a href="https://websitejavascriptfinalproject-jdbfeuewmo.now.sh/" target="_blank">JavaScript</a><img class="csshtmlimg" src="./pictures/JavaScript.PNG" alt="JavaScript"></a>
+            <p class="csshtmltext">Problem: To create a small vacation booking site. Site had to be animated and information auto populated by using JavaScript. Solution: Animated and auto populated the site by using JavaScript functions and loops.</p>
 
         </div>
 
@@ -179,33 +185,26 @@
 
             <h2>About Me</h2>
                 
-            <p class="about">I'm a Web Developer based in Calgary, Alberta. My background is in Business and I enjoy developing websites and always keeping up to date with the latest technology.
-                In my spare time I  enjoy coding, yoga and the outdoors!</p>
+            <p class="about">I'm a Web Developer based in Calgary, Alberta. My background is in Business and I enjoy developing websites and always keeping up to date with the latest technology. When I am not coding, I like to be outdoors! I love the water, can't find me in the summer? I am probalby out on the Bow River! I love Calgary, I love the mountains! I am also a huge animal lover, when at home, I am coding with the help of my two cats.</p>
 
             
             <img   src="./pictures/paddleboarding.jpg" alt="paddleboarding">
 
-
-            <strong><p>Contact me to find out more!</p></strong>
-
-
-
-
             <p>PH:403-923-4294</p>
-            <a href="mailto:maria.lopez@mjlopez.ca">Email Me!</a>
             <p>EMAIL:maria.lopez@mjlopez.ca</p>
                 
         </div>
 
     </div>    
-
     <div  class="form_container">
+            <strong><p>Contact me to find out more!</p></strong>
+
         <div class="info-form">
 
                 <script type="text/javascript">
                     var submitted=false;
                 </script>
-                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='https://mjlopez.ca';}"></iframe>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='https://mjlopez.ca/thank_you';}"></iframe>
 
             <form method="POST" target="hidden_iframe" onsubmit="submitted=true;" action="https://docs.google.com/forms/d/e/1FAIpQLSdBxTMxDXrKlINQxDRTZ_k1x8WNAkUmXkzBClW58Vx4wBl5eA/formResponse">
     
@@ -256,6 +255,7 @@
 
     <script src="mycode.js"></script>
     <script src="myskills.js"></script>
+    <script src="menuscroll.js"></script>
 
 </body>
 </html>

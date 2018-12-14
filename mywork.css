@@ -1,0 +1,22 @@
+#php {
+    position: relative;
+}
+
+#php .phpimg, 
+#php .phptext {transition: opacity 0.5s ease-in-out;}
+#php .phptext {position:absolute; color: black; top:10; left:10; opacity:0;line-height: 1.5em;}
+
+#php:hover .phpimg {opacity: 0;}
+#php:hover .phptext {height: 250px; box-shadow: 9px 6px 32px 4px rgba(0,0,0,0.75); padding: 20px;  background-color: #303242; color: white; font-size: 1em; opacity: 1;}
+
+
+#csshtml {
+    position: relative;
+}
+
+#csshtml .csshtmlimg, 
+#csshtml .csshtmltext {transition: opacity 0.5s ease-in-out;}
+#csshtml .csshtmltext {position:absolute; color: black; top:10; left:10; opacity:0;line-height: 1.5em;}
+
+#csshtml:hover .csshtmlimg {opacity: 0;}
+#csshtml:hover .csshtmltext {height: 250px; box-shadow: 9px 6px 32px 4px rgba(0,0,0,0.75); padding: 20px;  background-color: #303242; color: white; font-size: 1em; opacity: 1;}

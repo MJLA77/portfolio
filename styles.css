@@ -61,7 +61,7 @@ input, textarea, select, button {
 }
 
 
-.nav-titles {
+.nav-titles_black {
 
     width: 100%;
     display: flex;
@@ -69,19 +69,41 @@ input, textarea, select, button {
     align-items: center;
     justify-content: flex-end;
     font-family: 'Abril Fatface', cursive;
-    margin-right: 100px;
     font-size: 1.5em;
+    
 }
 
-.nav-titles a {
+.nav-titles_black a {
 
     padding: 20px;
     text-decoration: none;
     font-size: 1.2em;
     color: black;
-    /* background-color:rgba(0, 0, 0, .5); */
     
 }
+
+.nav-titles_opacity {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.5em;    
+}
+
+.nav-titles_opacity a {
+
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: black;
+    opacity: .5;
+
+}
+
+
 
 .nav-titles a:hover {
     transform: scale(1.1);
@@ -182,7 +204,6 @@ main.privacy_policy {
 
 .skills h3 {
 
-    /* padding-bottom: 20px; */
     width: 200px;
     height: 40px;
     background: black;
@@ -198,16 +219,9 @@ main.privacy_policy {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    /* background-image: url(./pictures/hero.jpg);
-    background-position: center; */
-
-    
     background-size: cover;
     height: 100vh;
     width: 75%;
-
-    
-
 
 }
 
@@ -294,7 +308,7 @@ main.privacy_policy {
 
     font-family: 'Kristi', cursive;
     color:black;
-    margin-left: 100px;
+    /* margin-left: 100px; */
 
 }
 
@@ -309,7 +323,7 @@ main.privacy_policy {
 
 
     font-family: 'Cinzel', serif;
-    margin-left: 100px;
+    /* margin-left: 100px; */
     text-align: center;
     color:black;
     
@@ -339,16 +353,104 @@ main.privacy_policy {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    font-family: 'Cinzel', serif;
-    font-size: 1em;
+    font-family: 'Abril Fatface', cursive;
+    /* font-size: 2em; */
     width: 100%;
-    background-color: #f3cfc3;
+    /* background-color: #f3cfc3;
+    background-image: url(./pictures/river.jpg);
+    background-size:cover;
+    background-position: 50% 50%; */
+    
+    /* height: 800px; */
     /* padding: 20px; */
+}
+
+.about-me h2 {
+
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2em;
+    color: black;
+    padding: 10px;    
+}
+
+.about-me p {
+
+    color: black;
+    font-size: 1.3em;
 }
 
 .about-me img {
     box-shadow: 9px 6px 32px 4px rgba(0,0,0,0.75);
+    padding: 20px;
+    background-color: white;
 }
+
+
+.about-me {
+    position: relative;
+    height: 1200px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+  }
+  .about-me:after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+  }
+  .about-me:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility:hidden;
+  
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
+    -moz-transform:translateZ(0) scale(1.0, 1.0);
+    -ms-transform:translateZ(0) scale(1.0, 1.0);
+    -o-transform:translateZ(0) scale(1.0, 1.0);
+     transform: translateZ(0) scale(1.0, 1.0);
+     background-image: url("./pictures/river.jpg");
+  
+    -webkit-background-size: cover ;
+     background-size: cover ;
+  
+     background-attachment: fixed;
+     animation: increase 50s linear 10ms infinite;
+  
+    -webkit-transition: all 0.2s ease-in-out;
+     -moz-transition: all 0.2s ease-in-out;
+     -ms-transition: all 0.2s ease-in-out;
+     -o-transition: all 0.2s ease-in-out;
+     transition: all 0.2s ease-in-out;
+     z-index: -2;
+  
+  }
+  
+  @-webkit-keyframes increase {
+      0%{transform: scale(1)}
+      50%{transform: scale(1.5)}
+      100%{transform: scale(1)}
+  }
+  @-moz-keyframes increase {
+      0%{transform: scale(1)}
+      50%{transform: scale(1.5)}
+      100%{transform: scale(1)}
+  }
+  @keyframes increase {
+      0%{transform: scale(1)}
+      50%{transform: scale(1.5)}
+      100%{transform: scale(1)}
+  }
 
 
 /* MID SECTION */
@@ -356,12 +458,13 @@ main.privacy_policy {
 
 .mywork {
 
-    font-family: 'Cinzel', serif;
+    font-family: 'Abril Fatface', cursive;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     background-color: #f7ddd0;
+    font-size: 2em;
 }
 
 .work {
@@ -383,6 +486,9 @@ main.privacy_policy {
     height:200px;
     width: 400px; 
     box-shadow: 9px 6px 32px 4px rgba(0,0,0,0.75);
+    padding: 10px;
+    background-color:white;
+    border-radius: 5px;
 
 }
 
@@ -394,9 +500,24 @@ main.privacy_policy {
     align-items: center;
     justify-content: center;
     height: 400px;
-    width: 500px;
+    width: 50%;
     /* padding: 20px; */
 
+}
+
+.work-desc a{
+
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: 'Abril Fatface', cursive;
+    box-shadow: 9px 6px 32px 4px rgba(0,0,0,0.75);
+
+}
+
+.work-desc p {
+    width:400px;
+    font-weight: bold;
 }
 
 #skills {
@@ -558,15 +679,24 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    color: grey;
+    color: black;
     font-family: "Roboto", sans-serif;
-    margin-bottom: 5px;
-    background-color: #303242;
+    background-color: #61718e;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
 }
 
 /* MEDIA */
 
 @media (max-width:1110px) {
+
+
+    .thank-you {
+        font-size: .9em;
+    }
 
     .nav-titles {
         display: none;
@@ -575,20 +705,6 @@ footer {
 
     header img {
         margin-left: 0;
-    }
-
-    .logo {
-
-        margin-left: 20px;
-        font-size: 2em;
-
-    }
-
-    .headliner h1 {
-
-        font-size: 1.5em;
-
-
     }
 
     .work {
@@ -600,43 +716,14 @@ footer {
         height: 100%;  
      }
 
-    
-}
 
-@media (max-width:1070px) { 
-
-    .logo {
-
-        font-size: 1.5em;
-        margin-left: 20px;
-    }
-
-    .nav-titles {
-        display: none;
-    }
-
-
-    .headliner h1 {
-
-        font-size: 1em;
-
-
-    }
-
-    .headliner h3 {
-        font-size: .8em;
-
-        
-
-    }
-
-
-    .ham-button {
+     .ham-button {
 
         display: flex;
         justify-content: flex-end;
         align-items: center; 
         width: 100%;
+        
    
 }
 
@@ -646,6 +733,7 @@ footer {
         margin: 0;
         border: none;
         background: transparent;
+        width: 50px;
     
         
 }
@@ -657,7 +745,7 @@ footer {
 
     .hamburger-icon i {
 
-        font-size: 2em;
+        font-size: 3em;
         color: black;
         cursor: pointer;
 }
@@ -691,13 +779,32 @@ footer {
         transform: scale(1.1);
 }
 
+    
+}
 
+@media (max-width:962px){
+    .thank-you {
+        font-size: .5em;
+    }
 }
 
 
 
 
-@media (max-width:825px) { 
+
+@media (max-width:877px) { 
+
+
+    .thank-you {
+        font-size: 1em;
+    }
+
+
+    .headliner h1 {
+        font-size: 6em;
+
+
+}
 
     .headliner h3 {
        display: none;
@@ -709,28 +816,43 @@ footer {
 
 @media (max-width:735px) { 
 
-    .headliner h1 {
-        font-size: .6em;
+
+
+.headliner h1 {
+    font-size: 5em;
 
 
 }
 
-.main-title{
+/* .main-title{
 
     margin-left: 10px;
    
-}
+} */
 
 .about-me p {
 
     font-size: .8em;
     width: 400px;
+    
+}
+
+footer {
+    font-size: .5em;
 }
 
 
 }
 
 @media (max-width:556px) {
+
+    .thank-you {
+        font-size: .5em;
+    }
+
+    .thankyou1 {
+        font-size: .5em;
+    }
 
     .about-me img {
         width: 400px;
